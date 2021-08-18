@@ -45,9 +45,9 @@ io.on('connection', (socket) => {
         io.local.emit("playerJoined", players);
     });
 
-    socket.on("leave", (socket) => {
-        delete players[socket];
-    })
+    // socket.on("leave", (socket) => {
+    //     delete players[socket];
+    // })
 
     // socket.emit("playerJoined", players);
 })

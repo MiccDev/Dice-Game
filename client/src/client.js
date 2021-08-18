@@ -39,11 +39,11 @@ socket.on("playerJoined", (players) => {
     }
 });
 
-function update() {
-    if(performance.navigation.type == performance.navigation.TYPE_RELOAD) {
-        socket.emit("leave", socket);
-    }
-    requestAnimationFrame(update);
-}
+// function update() {
+//     if(performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+//         socket.emit("leave", socket);
+//     }
+//     requestAnimationFrame(update);
+// }
 
-requestAnimationFrame(update);
+// requestAnimationFrame(update);
