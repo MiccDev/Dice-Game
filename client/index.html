@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link href="styles/main.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="styles/icon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="users">
+            <p id="text">Players:</p>
+        </div>
+        <img src="styles/title.png" width="410" height="214">
+        <br>
+        <div class="numbers">
+            <span class="num" id="num1"><img src="styles/number_6.png" width="60" height="60"></span>
+            <span class="num" id="num2"><img src="styles/number_6.png" width="60" height="60"></span>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="info">
+            <p id="player">Current Player: No one!</p>
+            <p id="status">...</p>
+        </div>
+        <br>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="src/client.js"></script>
+</body>
+</html>
